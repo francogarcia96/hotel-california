@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Hotel California</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+<nav>
+     <!-- imagen del fondo del menu de navegacion -->
+    <div><img src="images/entradahotel.jpg" alt="fondo de navegacion"> </div>
+    <!-- Logo -->
+    <h1>
+        <a href="#"><img src="images/Logo.png" alt="Logo" width="350"></a>
+    </h1>
+   
+    <!-- Menu de navegación -->
+    <ul>
+        <li><a href="#habitaciones">Habitaciones</a></li>
+        <li><a href="#servicios">Servicios</a></li>        
+        <li><a href="novedades.html">Novedades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#ubicacion">Ubicacion</a></li>
+    </ul>
+
+</nav>
+<header>
+    <!-- Formulario -->
+    <div>
+        <h3>Reserva online</h3>
+    </div>
+    <form action="formularioc-completo.php" method="POST">
+        <input type="text" name="Nombre y Apellido" placeholder="Nombre y apellido">
+        <input type="text" name="E-Mail" placeholder="E-Mail" required>
+        <input type="date" name="Check-in">
+        <input type="date" name="Check-out">
+        <label>Cantidad de personas</label>
+        <select name="cantidad-personas">
+            <option value="1-persona">1</option>
+            <option value="2-personas" selected>2</option>
+            <option value="3-personas">3</option>
+            <option value="4-personas">4</option>            
+        </select>
+        <input type="submit" name="Reserva">        
+
+        
+    </form>
+    <!-- Fondo de los textos -->
+
+    <img src="images/star.jpg" alt="fondo del encabezado" width="800">
+    <!-- Texto del encabezado -->
+    <div>
+        <h3>¿Quienes somos?</h3>
+        <p>Somos un hotel con más de 10 años en el servicio con recomendaciones comprobables por todos nuestros clientes.</p>
+    </div>
+    <div>
+        <h3>Nuestra misión</h3>
+        <p>Es que pases una estadía reconfortante y a gusto, degustes de buena comida una excelente limpieza y trato por parte del personal, ven a disfrutar una agradable estadía.</p>
+    </div>
+
+</header>
+<main>
+    <section id="habitaciones">
+        <h2>Habitaciones</h2>
+        <article>
+            <!-- SLIDER!!!! -->
+            <div id="slider1">
+                <img src="images/matrimonial1.jpg" alt="imagen de la habitacion">
+               <!--  <img src="images/matrimonial2.jpg" alt="imagen de la habitacion">
+                <img src="images/matrimonial3.jpg" alt="imagen de la habitacion"> -->
+            </div>
+            <h3>Cama matrimonial</h3>
+            <p>Habitacion sencilla para los que quieran un comodo lugar para dormir sin gastar de más, cuenta con baño propio y unas lindas vistas.</p>
+            <!-- CAMBIAR POR VENTANA MODAL  -->
+            <input type="submit" value="Ver más">
+       </article>
+       <article>
+           <!-- SLIDER -->
+           <div id="slider2">
+               <img src="images/individual1.jpg" alt="imagen de la habitacion">
+               <!-- <img src="images/individual2.jpg" alt="imagen de la habitacion">
+               <img src="images/individual3.jpg" alt="imagen de la habitacion"> -->
+           </div>
+           <h3>Camas individuales</h3>
+           <p>Dos camas individuales haciendo una sola, solo o acompañado se puede disfrutar por igual. Cuenta con escritorio personal, airea condicionado y baño personal</p>
+           <!-- CAMBIAR POR VENTANA MODAL -->
+           <input type="submit" value="Ver más">
+       </article>
+       <article>
+           <!-- SLIDERRR -->
+           <div id="slider3">
+               <img src="images/familiar1.jpg" alt="imagen de la habitacion familiar">
+               <!-- <img src="images/familiar2.jpg" alt="imagen de la habitacion familiar">
+               <img src="images/familiar3.jpg" alt="imagen de la habitacion familiar"> -->
+           </div>
+           <h3>Habitacion familiar</h3>
+           <p>Una hermosa habitacion para pasar un excelente rato con su familia. Cuenta con su baño propio, comodos sillones y un televisor lcd para pasar el rato.</p>
+           <!-- CAMBIAR POR VENTANA MODAL -->
+           <input type="submit" value="Ver más">
+       </article>
+       <article>
+           <!-- SLIDER!!! -->
+           <div id="slider4">
+                <img src="images/doble1.jpg" alt="imagen de la habitacion doble">
+                <!-- <img src="images/doble2.jpg" alt="imagen de la habitacion doble">
+                <img src="images/doble3.jpg" alt="imagen de la habitacion doble"> -->
+           </div>
+           <h3>Habitacion doble familiar</h3>
+           <p>En este cuarto usted puede venir con toda su familia y más, lugar es lo que no le va a faltar. Cuenta con todas las comodidades de las habitaciones anteriores</p>
+           <!-- CAMBIAR POR VENTANA MODAL -->
+           <input type="submit" value="Ver más">
+       </article>
+
+    </section>
+    <section id="servicios">
+        <article>
+            <h2>Servicios</h2>
+            <img src="images/servicioscalifornia.jpg" alt="Banquete de desayuno">
+            <ul>
+                <li>Servicio a la habitacion</li>
+                <li>Banquetes</li>
+                <li>Limpieza de cuartos</li>
+                <li>Gimnasio</li>
+                <li>Wi-Fi Gratis en todo el complejo</li>
+                <li>Agua disponible para los huespedes 24/7</li>
+                <li>Atención al cliente las 24 horas del dia</li>
+                <li>Cochera techada</li>
+                <li>Piscina</li>
+                <li>Guias turisticos (Preguntar en recepción)</li>
+            </ul>
+        </article>
+    </section>
+    <aside>        
+        <div id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.4381056537877!2d-58.42182242775983!3d-34.58199866117206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb583a539539f%3A0xa89332b58b82ad4a!2sAv.%20Santa%20Fe%204102%2C%20C1425%20CABA!5e0!3m2!1ses-419!2sar!4v1584257992268!5m2!1ses-419!2sar" width="600" height="450"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </aside>
+</main>
+<footer>
+    <h2>Contacto</h2>
+    <div>
+        <form action="comentario-gente.php" method="POST">
+            <input type="text" placeholder="Nombre y apellido">
+            <input type="text" placeholder="Telefono">
+            <input type="text" placeholder="Correo Electronico">            
+            <textarea name="comentario" cols="30" rows="8" >    
+            Ingresa tu mensaje
+            </textarea>
+            <input type="submit" value="Enviar">
+        
+        </form>
+    </div>
+    <div>
+        <img src="images/logo.png" alt="Logo del hotel">
+        <p>californiahoteles@gmail.com</p>
+        <p>Tel: 356-669857</p>
+        
+    </div>    
+        
+    
+</footer>
+
+</body>
+</html>
